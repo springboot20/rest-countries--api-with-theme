@@ -49,8 +49,3 @@ Pagination.prototype = {
   totalItems: PropTypes.number,
   currentPage: PropTypes.number,
 };
-  // const displayCountries = searchedCountry
-  //   ? [searchedCountry]
-  //   : selectedRegion === '' && searchCountry === ''
-  //   ? Data
-  //   : filteredCountries;

@@ -14,7 +14,7 @@ module.exports = withMT({
   theme: {
     screens: {
       xs: '480px',
-      '3xl': '1440px',
+      '2sxl': '1440px',
       ...defaultTheme.screens,
     },
     colors: {

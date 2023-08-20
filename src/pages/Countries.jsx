@@ -17,7 +17,7 @@ const Countries = () => {
   const currentCountries = displayCountries.slice(startIndex, endIndex);
   const gridVariants = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 0.5 } },
+    visible: { opacity: 1, transition: { duration: 0.3 } },
   };
 
   return (
@@ -30,7 +30,7 @@ const Countries = () => {
           initial='hidden'
           animate='visible'
           variants={gridVariants}
-          className='grid grid-cols-1 sm:grid-cols-2 gap-11 px-8 lg:grid-cols-3 3xl:grid-cols-4 mx-auto max-w-[120rem] pt-5 pb-[9rem] lg:px-8'>
+          className='grid grid-cols-1 sm:grid-cols-2 gap-8 px-8 lg:grid-cols-3 2sxl:grid-cols-4 mx-auto max-w-[120rem] pt-5 pb-[9rem] lg:px-8'>
           {searchResultMessage ? (
             <p className='font-semibold dark:text-white text-dark-blue-dark-LMT text-2xl'>{searchResultMessage}</p>
           ) : (

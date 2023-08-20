@@ -1,7 +1,6 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Button from '../icon/Button';
-import flag from './flag.svg';
 
 function formatPopulation(population) {
   return population.toString().replace(/B(?=(\d{3})+(?!\d))/g);
@@ -33,7 +32,7 @@ const CountryCard = ({ countries }) => {
   return (
     <React.Fragment>
       <div className='relative overflow-hidden rounded-lg col-span-2'>
-        <img src={flag} alt='' className='object-cover bg-no-repeat ' />
+        <img src={country.flag} alt='' className='object-cover bg-no-repeat ' />
       </div>
       <div className='col-span-2'>
         <h1 className='text-4xl font-bold mb-16 text-dark-blue-dark-DME dark:text-white'>{country.name}</h1>

@@ -14,7 +14,7 @@ const CountriesCard = ({ data }) => {
       layout
       className='card flex flex-col flex-shrink-0 flex-grow-0 basis-[300px] max-w-full rounded-xl bg-white dark:bg-dark-blue-dark-DME overflow-hidden hover:scale-105 transition-all'>
       <div className='relative'>
-        <img src={flag} alt='' className='object-cover no-repeat w-full h-[16rem]' />
+        <img src={data.flag} alt='' className='object-cover no-repeat w-full h-[16rem]' />
       </div>
       <div className='p-8'>
         <NavLink to={`/${data.name}`} className='card-title dark:text-white text-2xl font-semibold hover:underline'>
